@@ -1,0 +1,36 @@
+import java.util.*;
+class zeroarray
+{
+public static void main(String args[])
+{
+	int size,i,count=0;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter array size:");
+	size=sc.nextInt();
+	int ar[];
+	ar=new int[size];
+	System.out.println("enter array elements:");
+	for(i=0;i<size;i++)
+	{
+	ar[i]=sc.nextInt();
+	}
+	for(int j=0;j<size;j++)
+       {
+	if(ar[j]!=0)
+	{
+	ar[count]=ar[j];
+	count++;
+	}
+       }
+	while(count<size)
+	{
+	ar[count]=0;
+	count++;
+	}
+	for(i=0;i<size;i++)
+	{
+	System.out.print(ar[i]);
+	System.out.print(" ");
+	}
+}
+}
